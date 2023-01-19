@@ -5,7 +5,7 @@ pipeline {
         stage("create zip file"){
             steps{
                
-           sh 'zip middleware-scripts-${BUILD_NUMBER}.zip *  --exclude Jenkinsfile README.md '  
+           sh 'zip middlewareScript-${BUILD_NUMBER}.zip *  --exclude Jenkinsfile README.md '  
             
             }
         }
